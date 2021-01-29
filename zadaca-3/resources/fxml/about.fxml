@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxWidth="1.7976931348623157E308" minWidth="500.0" prefHeight="280.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints hgrow="NEVER" maxWidth="195.8" minWidth="10.0" prefWidth="195.8" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="317.4" minWidth="303.4" prefWidth="303.4" />
+      <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="59.0" minHeight="0.0" prefHeight="18.999999046325684" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="41.0" minHeight="0.0" prefHeight="40.000000953674316" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="72.0" minHeight="0.0" prefHeight="43.000000000000014" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="88.6" minHeight="0.0" prefHeight="42.400000000000006" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="79.4" minHeight="0.0" prefHeight="41.400000000000006" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="53.599999999999994" minHeight="0.0" prefHeight="25.599999999999994" vgrow="ALWAYS" />
+        <RowConstraints maxHeight="47.60000000000002" minHeight="0.0" prefHeight="47.60000000000002" vgrow="ALWAYS" />
+        <RowConstraints minHeight="0.0" vgrow="ALWAYS" />
+    </rowConstraints>
+    <children>
+        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="81.0" prefWidth="346.0" text="Zadaća 3" textFill="#af1b1b" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <font>
+                <Font size="33.0" />
+            </font>
+        </Label>
+        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Berina Suljić" textFill="#c51b1b" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label text="https://github.com/RPR-2019/zadaca-3-bsuljic1" textFill="#9f1e1e" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <ImageView fx:id="imageView" fitHeight="258.0" fitWidth="328.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowSpan="8" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+            <image>
+                <Image url="@../slike/about.png" />
+            </image>
+        </ImageView>
+        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="RAZVOJ PROGRAMSKIH " textFill="#6c1d1d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="3.0" prefWidth="257.0" text="RJEŠENJA" textAlignment="CENTER" textFill="#741b1b" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="45.0" text=" januar, 2020" textFill="#b73a3a" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    </children>
+</GridPane>

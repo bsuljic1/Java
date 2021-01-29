@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="212.0" prefWidth="162.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tutorijal05.Controller">
+   <center>
+      <GridPane alignment="center" hgap="10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10">
+         <columnConstraints>
+            <ColumnConstraints maxWidth="1.7976931348623157E308" />
+            <ColumnConstraints maxWidth="1.7976931348623157E308" />
+            <ColumnConstraints maxWidth="1.7976931348623157E308" />
+            <ColumnConstraints maxWidth="1.7976931348623157E308" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" />
+            <RowConstraints maxHeight="1.7976931348623157E308" />
+            <RowConstraints maxHeight="1.7976931348623157E308" />
+            <RowConstraints maxHeight="1.7976931348623157E308" />
+            <RowConstraints maxHeight="1.7976931348623157E308" />
+            <RowConstraints maxHeight="1.7976931348623157E308" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btn4" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#action4" text="4" GridPane.rowIndex="3" />
+            <Button fx:id="btn1" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#action1" text="1" GridPane.rowIndex="4" />
+            <Button fx:id="btn0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#action0" text="0" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" text="\%" GridPane.rowIndex="1" />
+            <Button fx:id="btndivide" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="multipleBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="*" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="btn7" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#action7" text="7" GridPane.rowIndex="2" />
+            <Label fx:id="display" maxWidth="1.7976931348623157E308" GridPane.columnSpan="4" />
+            <Button fx:id="btn8" mnemonicParsing="false" onAction="#action8" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btn5" mnemonicParsing="false" onAction="#action5" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btn2" mnemonicParsing="false" onAction="#action2" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="btn9" mnemonicParsing="false" onAction="#action9" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="plusBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#actionPlus" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2" />
+            <Button fx:id="btn6" mnemonicParsing="false" onAction="#action6" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="btn3" mnemonicParsing="false" onAction="#action3" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="equalsBtn" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#actionEquals" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+            <Button fx:id="minusBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="dotBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#actionDot" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+   </center>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</BorderPane>

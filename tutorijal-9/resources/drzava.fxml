@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="109.0" prefWidth="230.0" vgap="5.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Naziv:" />
+      <Label text="Glavni grad:" GridPane.rowIndex="1" />
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <buttons>
+          <Button fx:id="btnOk" mnemonicParsing="false" text="Ok" />
+            <Button fx:id="btnCancel" mnemonicParsing="false" text="Cancel" />
+        </buttons>
+      </ButtonBar>
+      <TextField fx:id="fieldNaziv" GridPane.columnIndex="1" />
+      <ChoiceBox fx:id="choiceGrad" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</GridPane>

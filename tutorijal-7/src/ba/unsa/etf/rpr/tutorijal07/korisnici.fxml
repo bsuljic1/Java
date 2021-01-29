@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10.0" vgap="10.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tutorijal07.Controller">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10"/>
+    </padding>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" prefWidth="140.40000762939454"/>
+        <ColumnConstraints hgrow="SOMETIMES" prefWidth="87.80000000000001"/>
+        <ColumnConstraints hgrow="SOMETIMES" prefWidth="120.39999999999998"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <BorderPane GridPane.rowSpan="5">
+            <center>
+                <ListView fx:id="listKorisnici" prefHeight="133.0" prefWidth="100.0"/>
+            </center>
+        </BorderPane>
+        <Label contentDisplay="CENTER" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT"
+               prefHeight="18.0" prefWidth="40.0" text="Ime:" textAlignment="CENTER" textOverrun="CLIP" wrapText="true"
+               GridPane.columnIndex="1">
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <GridPane.margin>
+                <Insets left="10.0"/>
+            </GridPane.margin>
+        </Label>
+        <Label contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="Prezime:"
+               GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <GridPane.margin>
+                <Insets left="10.0"/>
+            </GridPane.margin>
+        </Label>
+        <Label contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="E-mail:"
+               GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <GridPane.margin>
+                <Insets left="10.0"/>
+            </GridPane.margin>
+        </Label>
+        <Label contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="Korisničko ime:"
+               GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <GridPane.margin>
+                <Insets left="10.0"/>
+            </GridPane.margin>
+        </Label>
+        <Label contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="Lozinka:"
+               GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <GridPane.margin>
+                <Insets left="10.0"/>
+            </GridPane.margin>
+        </Label>
+        <TextField fx:id="imeField" GridPane.columnIndex="2"/>
+        <TextField fx:id="prezimeField" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <TextField fx:id="emailField" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+        <TextField fx:id="korimeField" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+        <PasswordField fx:id="lozinkaField" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="5">
+            <buttons>
+                <Button onAction="#actionDodaj" mnemonicParsing="false" text="Dodaj"/>
+                <Button onAction="#actionKraj" mnemonicParsing="false" text="Kraj"/>
+            </buttons>
+        </ButtonBar>
+    </children>
+</GridPane>

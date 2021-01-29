@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+          xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="NEVER" minWidth="10.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="1.7976931348623157E308" vgrow="NEVER"/>
+        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <TextField fx:id="fieldGiphy"/>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1">
+            <buttons>
+                <Button fx:id="btnSearch" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onAction="#searchAction" text="%search"/>
+                <Button fx:id="btnOk" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onAction="#okAction" text="%ok"/>
+                <Button fx:id="btnCancel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                        minWidth="-Infinity" mnemonicParsing="false" onAction="#cancelAction" text="%cancel"/>
+            </buttons>
+        </ButtonBar>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2"
+                    GridPane.rowIndex="1">
+            <content>
+                <TilePane fx:id="tilePane" hgap="5.0" maxHeight="1.7976931348623157E308"
+                          maxWidth="1.7976931348623157E308" prefColumns="4" vgap="5.0"/>
+            </content>
+        </ScrollPane>
+    </children>
+</GridPane>

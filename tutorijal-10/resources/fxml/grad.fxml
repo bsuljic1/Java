@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          prefHeight="131.0"
+          prefWidth="251.0" vgap="5.0" xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/10.0.2-internal">
+    <stylesheets>
+        <URL value="@../css/drzava.css"/>
+    </stylesheets>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="-Infinity" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+        <Label text="Naziv:"/>
+        <Label text="Broj stanovnika:" GridPane.rowIndex="1"/>
+        <Label text="Država:" GridPane.rowIndex="2"/>
+        <TextField fx:id="fieldNaziv" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                   GridPane.columnIndex="1"/>
+        <TextField fx:id="fieldBrojStanovnika" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+        <ChoiceBox fx:id="choiceDrzava" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="3">
+            <buttons>
+                <Button fx:id="btnOk" mnemonicParsing="false" onAction="#actionOk" text="Ok"/>
+                <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#actionCancel" text="Cancel"/>
+            </buttons>
+        </ButtonBar>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+    </padding>
+</GridPane>

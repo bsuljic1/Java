@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" vgap="5.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@../css/drzava.css" />
+    </stylesheets>
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="NEVER" maxWidth="-Infinity" minWidth="120.0" prefWidth="120.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <TableView fx:id="tableViewGradovi" prefHeight="200.0" prefWidth="200.0" GridPane.rowSpan="6">
+            <columns>
+                <TableColumn fx:id="colGradId" prefWidth="75.0" text="%key.id" />
+                <TableColumn fx:id="colGradNaziv" prefWidth="75.0" text="%key.naziv" />
+                <TableColumn fx:id="colGradStanovnika" prefWidth="75.0" text="%key.stanovnika" />
+                <TableColumn fx:id="colGradDrzava" prefWidth="213.4000244140625" text="%key.drzava" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnDodajGrad" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#actionGrad" text="%key.dodajgrad" GridPane.columnIndex="1" />
+        <Button fx:id="btnDodajDrzavu" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#actionDrzava" text="%key.dodajdrzavu" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button fx:id="btnIzmijeniGrad" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#actionIzmijeni" text="%key.izmijenigrad" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button fx:id="btnObrisiGrad" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#actionObrisi" text="%key.obrisigrad" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="btnStampa" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#actionStampa" text="%key.stampa" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnJezik" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#actionJezik" text="%key.jezik" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+    </children>
+    <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+    </padding>
+</GridPane>

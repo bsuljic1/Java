@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <GridPane hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" vgap="10.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" percentWidth="0.0" />
+            </columnConstraints>
+            <rowConstraints>  
+                <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="0.0" vgrow="SOMETIMES" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            </rowConstraints>
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Choose a child to look for report:" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding></Label>
+                <ChoiceBox fx:id="childChoice" maxWidth="1.7976931348623157E308" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin></ChoiceBox>
+                <Button fx:id="getReportButton" alignment="CENTER" contentDisplay="CENTER" onAction="#actionGetReport" text="Get a report" textAlignment="CENTER" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></Button>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </GridPane>
+    </center>
+    <top>
+        <MenuBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" BorderPane.alignment="CENTER">
+            <menus>
+
+                <Menu mnemonicParsing="false" text="Logout">
+                    <items>
+                        <MenuItem onAction="#actionLogout" text="Logout">
+                        </MenuItem>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <bottom>
+        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" opacity="0.4" prefHeight="38.0" prefWidth="449.0" text="Copyright (c) 2020 Berina Suljić Faculty of Electrical Engineering Sarajevo" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <effect>
+                <Blend />
+            </effect></Label>
+    </bottom>
+</BorderPane>

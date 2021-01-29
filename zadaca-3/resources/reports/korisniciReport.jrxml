@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="Simple_Blue" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20"
+              topMargin="20" bottomMargin="20" uuid="54c84749-2c02-458a-919f-9305c746c310">
+    <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="korisnici"/>
+    <queryString language="SQL">
+        <![CDATA[SELECT ime, prezime, username, password
+ FROM korisnik;]]>
+    </queryString>
+    <field name="ime" class="java.lang.Object">
+        <property name="com.jaspersoft.studio.field.label" value="ime"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="korisnik"/>
+    </field>
+    <field name="prezime" class="java.lang.Object">
+        <property name="com.jaspersoft.studio.field.label" value="prezime"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="korisnik"/>
+    </field>
+    <field name="username" class="java.lang.Object">
+        <property name="com.jaspersoft.studio.field.label" value="username"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="korisnik"/>
+    </field>
+    <field name="password" class="java.lang.Object">
+        <property name="com.jaspersoft.studio.field.label" value="password"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="korisnik"/>
+    </field>
+    <group name="Group1">
+        <groupExpression><![CDATA[$F{ime}]]></groupExpression>
+        <groupHeader>
+            <band height="33">
+                <staticText>
+                    <reportElement mode="Opaque" x="0" y="0" width="100" height="32" forecolor="#666666"
+                                   backcolor="#E6E6E6" uuid="decd8db4-8e30-44dd-972e-9286ab45946d"/>
+                    <textElement>
+                        <font size="12"/>
+                    </textElement>
+                    <text><![CDATA[ime]]></text>
+                </staticText>
+                <textField>
+                    <reportElement mode="Opaque" x="100" y="0" width="455" height="32" forecolor="#006699"
+                                   backcolor="#E6E6E6" uuid="43ab2726-48f0-497b-9215-a4ee90fa0b2f"/>
+                    <textElement>
+                        <font size="24" isBold="true"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA[$F{ime}]]></textFieldExpression>
+                </textField>
+                <line>
+                    <reportElement x="-20" y="32" width="595" height="1" forecolor="#666666"
+                                   uuid="098f50dd-713c-4e11-b4a9-1a3492fbab8c"/>
+                </line>
+            </band>
+        </groupHeader>
+        <groupFooter>
+            <band/>
+        </groupFooter>
+    </group>
+    <group name="Group2">
+        <groupExpression><![CDATA[$F{prezime}]]></groupExpression>
+        <groupHeader>
+            <band height="32">
+                <textField>
+                    <reportElement x="100" y="0" width="455" height="32" forecolor="#006699"
+                                   uuid="932285de-58d7-45e4-9413-fb396938df33"/>
+                    <textElement>
+                        <font size="22" isBold="true"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA[$F{prezime}]]></textFieldExpression>
+                </textField>
+                <staticText>
+                    <reportElement x="0" y="0" width="100" height="20" forecolor="#666666"
+                                   uuid="e2c0d612-16ae-43b4-b562-f732f044d132"/>
+                    <textElement>
+                        <font size="12"/>
+                    </textElement>
+                    <text><![CDATA[prezime]]></text>
+                </staticText>
+            </band>
+        </groupHeader>
+        <groupFooter>
+            <band/>
+        </groupFooter>
+    </group>
+    <group name="Group3">
+        <groupExpression><![CDATA[$F{username}]]></groupExpression>
+        <groupHeader>
+            <band height="32">
+                <textField>
+                    <reportElement x="100" y="0" width="455" height="32" forecolor="#006699"
+                                   uuid="65f38f84-47ad-41a7-b33b-ca6bf66126d5"/>
+                    <textElement>
+                        <font size="20" isBold="true"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA[$F{username}]]></textFieldExpression>
+                </textField>
+                <staticText>
+                    <reportElement x="0" y="0" width="100" height="20" forecolor="#666666"
+                                   uuid="9a6b1e2d-15b8-4c38-8cf1-a117eb18a5f8"/>
+                    <textElement>
+                        <font size="12"/>
+                    </textElement>
+                    <text><![CDATA[username]]></text>
+                </staticText>
+            </band>
+        </groupHeader>
+        <groupFooter>
+            <band/>
+        </groupFooter>
+    </group>
+    <group name="Group4">
+        <groupExpression><![CDATA[$F{password}]]></groupExpression>
+        <groupHeader>
+            <band height="32">
+                <textField>
+                    <reportElement x="100" y="0" width="455" height="32" forecolor="#006699"
+                                   uuid="902654cd-c4b7-4f90-8c04-a4f2fcb39f9d"/>
+                    <textElement>
+                        <font size="16" isBold="true"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA[$F{password}]]></textFieldExpression>
+                </textField>
+                <staticText>
+                    <reportElement x="0" y="0" width="100" height="20" forecolor="#666666"
+                                   uuid="27160b5f-b225-4a89-8a4c-41f2b617ddcf"/>
+                    <textElement>
+                        <font size="12"/>
+                    </textElement>
+                    <text><![CDATA[password]]></text>
+                </staticText>
+            </band>
+        </groupHeader>
+        <groupFooter>
+            <band/>
+        </groupFooter>
+    </group>
+    <background>
+        <band/>
+    </background>
+    <title>
+        <band height="72">
+            <frame>
+                <reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699"
+                               uuid="07f3114b-20e2-40f2-a088-3c824f3b6c04"/>
+                <staticText>
+                    <reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF"
+                                   uuid="fe5cd8c0-b95b-40e9-8d19-e8aacb49f069"/>
+                    <textElement>
+                        <font size="34" isBold="true"/>
+                    </textElement>
+                    <text><![CDATA[KORISNICI]]></text>
+                </staticText>
+            </frame>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="13"/>
+    </pageHeader>
+    <columnHeader>
+        <band height="21">
+            <line>
+                <reportElement x="-20" y="20" width="595" height="1" forecolor="#666666"
+                               uuid="b3b5c908-8750-49c8-be20-f4286f8666f1"/>
+            </line>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="20">
+            <line>
+                <reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1"
+                               uuid="a4713242-195f-4b11-b0b6-d1725dde029a"/>
+            </line>
+        </band>
+    </detail>
+    <columnFooter>
+        <band/>
+    </columnFooter>
+    <pageFooter>
+        <band height="17">
+            <textField>
+                <reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6"
+                               uuid="ae67f72d-9a57-4289-8fac-cdf03e6e2572"/>
+                <textElement textAlignment="Right"/>
+                <textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+            </textField>
+            <textField evaluationTime="Report">
+                <reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6"
+                               uuid="d77bc5a3-4c3b-4367-9579-2a785207bdcc"/>
+                <textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+            </textField>
+            <textField pattern="EEEEE dd MMMMM yyyy">
+                <reportElement x="0" y="4" width="100" height="13" uuid="dcb08481-70a5-4991-8cd1-877c2a297501"/>
+                <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageFooter>
+    <summary>
+        <band/>
+    </summary>
+</jasperReport>

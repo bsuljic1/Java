@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane hgap="10.0" vgap="10.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <rowConstraints>
+        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="0.0" />
+        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="0.0" />
+        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="0.0" />
+        <RowConstraints maxHeight="1.7976931348623157E308" percentHeight="0.0" />
+        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="45.60000000000001" percentHeight="0.0" prefHeight="45.60000000000001" />
+        <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" percentHeight="0.0" prefHeight="30.0" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" percentHeight="0.0" prefHeight="30.0" />
+      <RowConstraints maxHeight="1.7976931348623157E308" />
+    </rowConstraints>
+    <columnConstraints>
+      <ColumnConstraints maxWidth="1.7976931348623157E308" percentWidth="0.0" />
+        <ColumnConstraints percentWidth="0.0" />
+        <ColumnConstraints percentWidth="0.0" />
+      <ColumnConstraints maxWidth="1.7976931348623157E308" percentWidth="0.0" />
+    </columnConstraints>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="40.0" top="20.0" />
+    </padding>
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Child information" textAlignment="CENTER" GridPane.columnIndex="1">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Parent information" textAlignment="CENTER" GridPane.columnIndex="2">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </Label>
+        <ButtonBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+            <buttons>
+                <Button fx:id="buttonSave" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#actionSave" text="Save" textAlignment="CENTER" />
+                <Button fx:id="buttonCancel" cancelButton="true" mnemonicParsing="false" onAction="#actionCancel" text="Cancel" textAlignment="CENTER" />
+            </buttons>
+        </ButtonBar>
+      <Label fx:id="childFirstName" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Label fx:id="childLastName" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Label fx:id="parentFirstName" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Label fx:id="parentLastName" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Label fx:id="phoneNumber" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Label fx:id="address" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Label" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Time in kindergarten:" GridPane.rowIndex="4">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Label fx:id="timeInKindergarten" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <TextArea fx:id="notesArea" prefHeight="200.0" prefWidth="200.0" promptText="Write notes..." GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="4" />
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="First name:" GridPane.rowIndex="2">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Last name:" GridPane.rowIndex="3">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Behavioral notes:" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Separator prefWidth="200.0" />
+      <ButtonBar fx:id="gradeButtonBar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnSpan="4" GridPane.rowIndex="6">
+        <buttons>
+            <RadioButton fx:id="unratedRadio" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#actionUnrated" text="UNRATED">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></RadioButton>
+            <RadioButton fx:id="poorRadio" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#actionPoor" text="POOR">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></RadioButton>
+            <RadioButton fx:id="averageRadio" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#actionAverage" text="AVERAGE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></RadioButton>
+            <RadioButton fx:id="goodRadio" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#actionGood" text="GOOD">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></RadioButton>
+            <RadioButton fx:id="verygoodRadio" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#actionVerygood" text="VERY GOOD">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding></RadioButton>
+            <RadioButton fx:id="excellentRadio" mnemonicParsing="false" onAction="#actionExcellent" text="EXCELLENT" />
+        </buttons>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </ButtonBar>
+      <ChoiceBox fx:id="activityChoice" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Current activity:" GridPane.rowIndex="5">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+    </children>
+</GridPane>
